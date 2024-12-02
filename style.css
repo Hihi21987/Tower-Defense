@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "chewy";
+  src: url("/assets/fonts/Chewy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gagalin";
+  src: url("/assets/fonts/Gagalin-Regular.otf") format("opentype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.upgrade-button {
+  height: 70px;
+  background-color: #9b885dd9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #7a673cd9;
+  transform: scale(1.05);
+  border: solid;
+  border-color: white;
+}
+
+.upgrade-button:active {
+  background-color: #675834d9;
+  transform: scale(0.95);
+}
+
+.upgrade-button-maxed {
+  height: 70px;
+  background-color: #7a673cd9;
+  color: white;
+  border: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  border-color: white;
+}
+
+.upgrade-button-disabled {
+  height: 70px;
+  background-color: #847041d9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.upgrade-button-content {
+  text-align: left;
+  padding: 5px;
+}
+
+.upgrade-button-heading {
+  font-size: 18px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: "chewy";
+}
+
+.upgrade-button-desc {
+  font-size: 14px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #4b3b2cd9;
+  color: #ffffff;
+  font-family: "chewy";
+}
+
+.start-button {
+  font-family: "gagalin";
+  background-color: #9b885dd9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #7a673cd9;
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  background-color: #4b3b2cd9;
+  transform: scale(0.95);
+}
+
+.close-button {
+  font-size: 25px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+  color: #cfcfcf;
+}
+
+.tower-button {
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.tower-button:hover {
+  transform: scale(1.05);
+}
+
+.tower-button:active {
+  transform: scale(0.95);
+}
+
+.tower-button-disabled {
+  filter: brightness(0.6);
+  opacity: 0.8;
+}
